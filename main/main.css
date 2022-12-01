@@ -1,0 +1,124 @@
+/* font-properties:
+general: 0.8em, 100,
+headers: 
+ */
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: white;
+}
+/*  WELCOME SECTION */
+.welcome-section {
+    background-image: url('../images/welcome_background.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100vw;
+    color: white;
+}
+/* menu */
+.menu {
+    padding: 5vh 0 5vh 0;
+    width: 50%;
+    margin: auto;
+}
+/* list of options */
+.options {
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    opacity: 0.9;
+    font-weight: 100;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+/* intro text */
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    padding-left: 15vw;
+    font-size: 1.8em;
+}
+/* PROJECT SECTION*/
+.project-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.slider-wrapper {
+    height: 75vh;
+    width: 100%;
+    overflow-y: scroll;
+    padding-right: 17px;
+    box-sizing: content-box;
+}
+.buttons {
+    position: relative;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+.slider {
+    height: 170vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: grab;
+}
+.slide {
+    height: 75vh;
+    width: 75vw;
+    position: relative; /* to place the project description at the bottom */
+    background-image: url('../images/welcome_background.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    box-shadow:  20px 20px 30px #d9d9d9,
+             -20px -20px 30px #ffffff;
+}
+.project-description {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 70vw;
+    height: 40%;
+    bottom: 0;
+    position: absolute; /* to place the project description at the bottom */
+    background-color: rgb(58, 72, 110);
+    color: white;
+    border-radius: 30px;
+    transition: all .5s ease-out;
+}
+/* show project description on slide hover */
+.slide:hover .project-description {
+    visibility: visible;
+}
+.project-description:nth-child(n) {
+    padding-top: 1vh;
+    padding-left: 5vw;
+}
+.project-description:nth-child(n+1) {
+    font-size: 0.8em;
+}
+.details-button {
+    width: 10%;
+    height: 15%;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}
+.details-button:hover {
+    background-color: ;
+}
