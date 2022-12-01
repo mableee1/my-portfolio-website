@@ -1,0 +1,250 @@
+/* font-properties:
+general: 0.8em, 100,
+headers: 
+ */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #E2E0E5;
+    overflow-x: hidden;
+}
+/*  WELCOME SECTION */
+.welcome-section {
+    height: 100vh;
+    background-color: #E2E0E5;
+    background-size: cover;
+    background-position: center;
+    color: #1C3754;
+}
+/* menu button */
+.menu-btn {
+    display: none;
+    background-color: #1C3754;
+}
+/* menu */
+.menu {
+    position: fixed;
+    padding-top: 5vh;
+    width: 100%;
+    z-index: 1000;
+}
+.menu-content {
+    width: 50%;
+    margin: auto;
+}
+/* list of options */
+.options {
+    height: 20vh;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    opacity: 0.9;
+    font-weight: 100;
+    font-size: 0.7em;
+    transition: all .5s ease-in-out;
+}
+/* intro container */
+.intro-container {
+    padding-left: 15vw;
+}
+/* intro text */
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    height: 100vh;
+    font-size: 1.5em;
+}
+
+/* PROJECT SECTION*/
+.project-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project-btn {
+    position: absolute;
+    background-color: #E2E0E5;
+    border-radius: 10px;
+    border: 1px solid #E2E0E5;
+    height: 4.5vh;
+    width: 15vw;
+    z-index: 1000;
+    font-size: 0.7em;
+    transition: all .5s ease-in-out;
+}
+.project-btn a {
+    text-decoration: none;
+    color: #1C3754;
+}
+.project-btn:hover {
+    background-color: #1C3754;
+    color: #E2E0E5;
+    border-color: #1C3754;
+}
+.project-btn:hover a {
+    color: #E2E0E5;
+}
+.projects {
+    height: inherit;
+    display: grid;
+    grid-template-columns: repeat(2, 50vw);
+    grid-auto-rows: minmax(50vh, auto);
+    overflow: hidden;
+}
+.projects img {
+    height: 100%;
+    width: 100%;
+    filter: brightness(0.3);
+}
+
+/* ABOUT ME SECTION */
+.about-me-section {
+    max-height: fit-content;
+    display: flex;
+    align-items: center;
+    padding: 15vh 0 15vh 0;
+}
+.about-me-container {
+    display: grid;
+    grid-template-columns: repeat(2, 50vw);
+}
+.about-me-container img {
+    height: 90%;
+    width: 70%;
+}
+.about-me-desc {
+    color: #1C3754;
+    width: 85%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about-me-resume {
+    text-decoration: none;
+    color: #436699;
+    transition: all .5s ease-in-out;
+}
+.about-me-resume:hover {
+    color: #1C3754;
+}
+
+/* CONTACT SECTION */
+.contact-section {
+    max-height: fit-content;
+    padding: 15vh 0 15vh 0;
+    background-color: #1C3754;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #E2E0E5;
+}
+.contact-section p {
+    padding-bottom: 9vh;
+}
+.contact-section ul {
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.contact-section li {
+    transition: all .5s ease-in-out;
+}
+.contact-section ul a {
+    color: #E2E0E5;
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+}
+.contact-section li:hover {
+    color: #436699;
+}
+.contact-section ul a:hover {
+    color: #436699;
+}
+/* RESPONSITIVITY */
+@media (max-width: 959px) {
+    body {
+        font-size: 0.8rem;
+    }
+    .intro {
+        padding-right: 15vw;
+        text-align: right;
+    }
+    .menu {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        margin-left: 15vw;
+    }
+    .menu-btn {
+        display: block;
+        width: 5px;
+        height: 5px;
+    }
+    .options {
+        visibility: hidden;
+        flex-direction: column;
+        font-size: 1.1rem;
+    }
+    .show-options {
+        visibility: visible;
+    }
+    .project-btn {
+        height: 3vh;
+        width: 25vw;
+        border-radius: 7px;
+    }
+    .projects, .about-me-container {
+        grid-template-columns: repeat(1, 100vw);
+    }
+    .about-me-desc {
+        text-align: center;
+        margin: auto;
+    }
+    .about-me-container img {
+        width: 100%;
+        max-height: 100%;
+    }
+    .contact-section ul {
+        height: 20vh;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+@media (min-width: 960px) and (max-width: 1099px) {
+    body {
+        font-size: 1.2rem;
+    }
+    .project-btn {
+        height: 4vh;
+        width: 31vw;
+        border-radius: 10px;
+    }
+    .about-me-container {
+        grid-template-columns: repeat(1, 100vw);
+    }
+    .about-me-desc {
+        text-align: center;
+        margin: auto;
+    }
+    .about-me-container img {
+        width: 100%;
+        max-height: 100%;
+    }
+}
+@media (min-width: 1100px) {
+    body {
+        font-size: 1.3rem;
+    }
+}
