@@ -2,15 +2,6 @@
 general: 0.8em, 100,
 headers: 
  */
-html {
-    scroll-behavior: smooth;
-}
-body {
-    margin: 0;
-    font-family: sans-serif;
-    background-color: #E2E0E5;
-    overflow-x: hidden;
-}
 /*  WELCOME SECTION */
 .welcome-section {
     height: 100vh;
@@ -18,44 +9,6 @@ body {
     background-size: cover;
     background-position: center;
     color: #1C3754;
-}
-/* menu button */
-.menu-btn {
-    display: none;
-    background-color: transparent;
-    margin: 15vw 0 0 15vw;
-    border: none;
-}
-.menu-btn img {
-    height: 3vw;
-    width: 3vw;
-}
-/* menu */
-.menu {
-    position: fixed;
-    padding: 1vh 0 1vh 0;
-    width: 100%;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    z-index: 2000;
-    transition: all .5s ease-in-out;
-}
-.menu-content {
-    width: 50%;
-    margin: auto;
-}
-/* list of options */
-.options {
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-    opacity: 0.9;
-    font-weight: 100;
-    font-size: 0.7em;
-    transition: all .5s ease-in-out;
-}
-.options li:hover {
-    color:#436699;
 }
 /* intro container */
 .intro-container {
@@ -146,86 +99,11 @@ body {
     color: #1C3754;
 }
 
-/* CONTACT SECTION */
-.contact-section {
-    max-height: fit-content;
-    padding: 15vh 0 15vh 0;
-    background-color: #1C3754;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    color: #E2E0E5;
-}
-.contact-section p {
-    padding-bottom: 9vh;
-}
-.contact-section ul {
-    width: 100%;
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-.contact-section li {
-    transition: all .5s ease-in-out;
-}
-.contact-section ul a {
-    color: #E2E0E5;
-    text-decoration: none;
-    transition: all .5s ease-in-out;
-}
-.contact-section li:hover {
-    color: #436699;
-}
-.contact-section ul a:hover {
-    color: #436699;
-}
-/* RESPONSITIVITY */
+/* RESPONSIVE */
 @media (max-width: 959px) {
-    body {
-        font-size: 0.8rem;
-    }
     .intro {
         padding-right: 15vw;
         text-align: right;
-    }
-    .menu {
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-    }
-    .menu-btn {
-        display: block;
-        width: 5px;
-        height: 5px;
-    }
-    .options {
-        visibility: hidden;
-        flex-direction: column;
-        font-size: 1.1rem;
-        transition: all .5s ease-in-out;
-    }
-    /* on menu button click */
-    .show-options {
-        visibility: visible;
-        height: 100%;
-        justify-content: space-evenly;
-        align-items: center;
-        background-color: #1C3754;
-    }
-    .menu-content {
-        height: 100%;
-        transition: all .5s ease-in-out;
-    }
-    .show-options li {
-        color: #E2E0E5;
-        transition: all .5s ease-in-out;
-    }
-    .menu-background {
-        height: 100vh;
-        background-color: #1C3754;
     }
     /* project button */
     .project-btn {
@@ -244,30 +122,8 @@ body {
         width: 100%;
         max-height: 100%;
     }
-    .contact-section ul {
-        height: 20vh;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
 }
 @media (min-width: 960px) and (max-width: 1099px) {
-    body {
-        font-size: 1.2rem;
-    }
-    .menu li {
-        transition: all .5s ease-in-out;
-    }
-    .menuScrolled {
-        background-color: #1C3754;
-    }
-    .menuScrolled .options li {
-        color: #E2E0E5;
-        transition: all .5s ease-in-out;
-    }
-    .menuScrolled .options li:hover {
-        color:#436699;
-    }
     .project-btn {
         height: 4vh;
         width: 31vw;
@@ -286,20 +142,4 @@ body {
     }
 }
 @media (min-width: 1100px) {
-    body {
-        font-size: 1.3rem;
-    }
-    .menu li {
-        transition: all .5s ease-in-out;
-    }
-    .menuScrolled {
-        background-color: #1C3754;
-    }
-    .menuScrolled .options li {
-        color: #E2E0E5;
-        transition: all .5s ease-in-out;
-    }
-    .menuScrolled .options li:hover {
-        color:#436699;
-    }
 }
