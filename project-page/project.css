@@ -1,0 +1,59 @@
+/* HOME SECTION */
+#home {
+    padding-bottom: 30vh;
+}
+/* PROJECTS SECTION */
+#projects {
+    width: 70%;
+    margin: auto;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 20vw);
+    grid-auto-rows: 60vh;
+    column-gap: 5vw;
+    row-gap: 10vh;
+}
+/* project card */
+.project-wrapper {
+    color: #1C3754;
+    border: none;
+    box-shadow: 5px 5px 21px #d3d3d6,
+    -10px -10px 21px #fff;
+}
+.project-image {
+    height: 50%;
+    width: 100%;
+}
+.project-info {
+    padding: 3vh 0 0 1vw;
+}
+.project-info a {
+    text-decoration: none;
+    color: #1C3754;
+}
+.project-title {
+    font-weight: bold;
+}
+.project-about {
+    padding-top: 3vh;
+}
+.project-github {
+    padding-top: 3vh;
+}
+.project-about, .project-technology {
+    font-size: 0.8rem;
+}
+.project-github, .project-website {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.project-website {
+
+}
+.project-technology {
+    padding-top: 1vh;
+    font-weight: lighter;
+    opacity: 0.6;
+}
