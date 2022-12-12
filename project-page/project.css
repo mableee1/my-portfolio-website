@@ -2,58 +2,124 @@
 #home {
     padding-bottom: 30vh;
 }
+/* PAGE NAME SECTION */
+#page-name h1 {
+    text-align: center;
+    color: #1C3754;
+}
 /* PROJECTS SECTION */
 #projects {
-    width: 70%;
+    width: 80%;
     margin: auto;
 }
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 20vw);
-    grid-auto-rows: 60vh;
-    column-gap: 5vw;
+    grid-template-columns: repeat(2, 38.5vw);
+    grid-template-rows: 35vh;
+    column-gap: 3vw;
     row-gap: 10vh;
 }
 /* project card */
 .project-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     color: #1C3754;
-    border: none;
-    box-shadow: 5px 5px 21px #d3d3d6,
-    -10px -10px 21px #fff;
+    transition: background-color 0.5s ease-in-out;
+}
+.project-wrapper:hover {
+    background-color: rgba(28, 55, 84, 0.1);
+}
+.project-image, .project-info {
+    height: 80%;
 }
 .project-image {
-    height: 50%;
-    width: 100%;
+    width: 50%;
+    margin-left: 2vw;
+    border-radius: 10px;
 }
 .project-info {
-    padding: 3vh 0 0 1vw;
+    padding: 0 2vw 0 2vw;
 }
 .project-info a {
-    text-decoration: none;
     color: #1C3754;
+    text-decoration: none;
 }
 .project-title {
-    font-weight: bold;
-}
-.project-about {
-    padding-top: 3vh;
+    font-size: 0.9em;
+    text-transform: uppercase;
 }
 .project-github {
-    padding-top: 3vh;
-}
-.project-about, .project-technology {
-    font-size: 0.8rem;
+    padding-top: 10vh;
 }
 .project-github, .project-website {
     display: block;
+    width: fit-content;
     font-size: 0.9rem;
-    font-weight: bold;
-}
-.project-website {
-
+    border-bottom: 1px solid rgba(28, 55, 84, 0.3);
 }
 .project-technology {
     padding-top: 1vh;
+    font-size: 0.8rem;
     font-weight: lighter;
-    opacity: 0.6;
+}
+
+
+
+/* RESPONSIVE */
+@media (max-width: 959px) {
+    #projects {
+        width: 90%;
+    }
+    .grid {
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: 60vh;
+        row-gap: 5vh;
+    }
+    .project-wrapper {
+        flex-direction: column;
+    }
+    .project-image, .project-info {
+        width: 90%;
+        height: 90%;
+        margin: 5% 5% 0 5%;
+    }
+    .project-title {
+        font-size: 1.1rem;
+        text-transform: none;
+    }
+    .project-github {
+        padding-top: 5vh;
+    }
+    .project-technology {
+        padding-top: 5vh;
+    }
+}
+
+@media (min-width: 960px) and (max-width: 1172px) {
+    #projects {
+        width: 90%;
+    }
+    .grid {
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: 50vh;
+        row-gap: 5vh;
+    }
+    .project-wrapper {
+        flex-direction: row;
+        padding: 15px;
+    }
+    .project-image, .project-info {
+        height: 90%;
+    }
+    .project-image {
+        width: 65%;
+    }
+    .project-github {
+        padding-top: 3vh;
+    }
+    .project-technology {
+        padding-top: 3vh;
+    }
+
 }

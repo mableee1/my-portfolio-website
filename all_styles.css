@@ -4,7 +4,7 @@ html {
 body {
     margin: 0;
     font-family: sans-serif;
-    background-color: #E2E0E5;
+    background-color: white;
     overflow-x: hidden;
 }
 /* MENU */
@@ -54,6 +54,7 @@ body {
 /* CONTACT SECTION */
 .contact-section {
     max-height: fit-content;
+    margin-top: 15vh;
     padding: 15vh 0 15vh 0;
     background-color: #1C3754;
     display: flex;
