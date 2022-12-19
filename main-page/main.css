@@ -13,6 +13,25 @@ headers:
 .intro-container {
     padding-left: 15vw;
 }
+.links ul {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+.links ul a {
+    text-decoration: none;
+    color: #1C3754;
+    transition: all .5s ease-in-out;
+}
+.links ul a:hover {
+    color: #436699;
+}
+.links img {
+    width: 25px;
+    height: 25px;
+}
 /* intro text */
 .intro {
     display: flex;
