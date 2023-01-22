@@ -7,6 +7,77 @@
     text-align: center;
     color: #1C3754;
 }
+/* ABOUT PROJECT SECTION */
+.about-project {
+    display: none;
+    position: absolute;
+    height: 80vh;
+    width: 90vw;
+    flex-direction: row;
+    align-items: center;
+    left: 5vw;
+    top: 15vh;
+    background-color: #1C3754;
+    border-radius: 10px;
+    z-index: 1000;
+    font-size: 0.7rem;
+}
+/* show the ABOUT PROJECT SECTION */
+#show {
+    display: flex;
+}
+.slider, .description {
+    padding-right: 5vw;
+}
+.slider {
+    width: 100%;
+    height: fit-content;
+    padding-left: 5vw;
+}
+.slides {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+/* slides are invisible by default */
+.slides li {
+    display: none;
+}
+.slides img {
+    width: 40vw;
+    height: 40vh;
+}
+/* visible slide */
+.about-project .active {
+    display: block;
+}
+.button-wrap {
+    display: flex;
+    justify-content: end;
+    align-items: start;
+}
+.close-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.close-button-icon {
+    height: 19px;
+    width: 19px;
+    filter: invert(); /* to make to close button white */
+}
+.description {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.description > a {
+    text-decoration: none;
+}
+.tech {
+    list-style-type: none;
+    padding: 0;
+}
 /* PROJECTS SECTION */
 #projects {
     width: 80%;
@@ -48,6 +119,7 @@
 .project-title {
     font-size: 0.9em;
     text-transform: uppercase;
+    cursor: pointer;
 }
 .project-github {
     padding-top: 10vh;

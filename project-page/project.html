@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="image/png" sizes="16x16" rel="icon" href="">
     <link rel="stylesheet" href="../all_styles.css">
+    <link href="../about-project-page/about-project.html" rel="import" />
     <link rel="stylesheet" href="project.css">
     <title>Portfolio projects | Natalia Kim</title>
 </head>
@@ -42,13 +43,49 @@
         <h1>LATEST PROJECTS</h1>
     </section>
 
+    <section class="about-project">
+        <div class="slider">
+            <ul class="slides">
+                <li class="active slide">
+                    <img src="../images/valorant-project-1.png" alt="">
+                </li>
+                <li class="slide">
+                    <img src="../images/valorant-project-2.png" alt="">
+                </li>
+                <li class="slide">
+                    <img src="../images/valorant-project-3.png" alt="">
+                </li>
+            </ul>
+            <div class="slide-buttons">
+                <button class="prev"></button>
+                <button class="next"></button>
+            </div>
+        </div>
+        <div class="description">
+            <div class="button-wrap">
+                <button class="close-button">
+                    <img class="close-button-icon" src="https://cdn-icons-png.flaticon.com/512/2961/2961937.png" alt="">
+                </button>
+            </div>
+            <h1 class="name">Valorant Guides</h1>
+            <a href="">website</a>
+            <a href="">github repository</a>
+            <p class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam inventore debitis in est ab reiciendis harum nesciunt reprehenderit, facilis deleniti cupiditate adipisci quos obcaecati ipsam rem nemo vero doloremque nisi!</p>
+            <ul class="tech">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+    </section>
+
     <!--PORTFOLIO PROJECTS SECTION-->
     <section id="projects" class="portfolio-projects-section">
         <div class="grid">
             <div class="project-wrapper">
                 <img class="project-image" src="../images/valorant-project-1.png" alt="">
                 <div class="project-info">
-                    <a class="project-title" href="">Valorant Guides</a>
+                    <h1 class="project-title">Valorant Guides</h1>
                     <a class="project-github" href="https://github.com/mableee1/my-portfolio-website">Repository on Github</a>
                     <a class="project-website" href="">Website</a>
                     <p class="project-technology">#HTML #CSS #JavaScript</p>
@@ -57,7 +94,7 @@
             <div class="project-wrapper">
                 <img class="project-image" src="" alt="">
                 <div class="project-info">
-                    <a class="project-title" href="">Title</a>
+                    <h1 class="project-title" href="">Title</h1>
                     <a class="project-github" href="">Repository on Github</a>
                     <a class="project-website" href="">Website</a>
                     <p class="project-technology">#HTML #CSS #JavaScript</p>
@@ -66,7 +103,7 @@
             <div class="project-wrapper">
                 <img class="project-image" src="" alt="">
                 <div class="project-info">
-                    <a class="project-title" href="">Title</a>
+                    <h1 class="project-title" href="">Title</h1>
                     <a class="project-github" href="">Repository on Github</a>
                     <a class="project-website" href="">Website</a>
                     <p class="project-technology">#HTML #CSS #JavaScript</p>
@@ -88,9 +125,9 @@
                 <a href="">Linkedin</a>
             </li>
         </ul>
+        <p> Natalia Kim © 2023</p>
     </footer>
 
-    <script src="../all.js"></script>
     <script src="project.js"></script>
 </body>
 </html>
